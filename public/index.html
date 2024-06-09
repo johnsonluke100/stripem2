@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Square Payment Form</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script type="text/javascript" src="https://sandbox.web.squarecdn.com/v1/square.js"></script>
+</head>
+<body>
+  <div class="container">
+    <form id="payment-form" action="/process-payment" method="POST">
+      <div id="keypad">
+        <input type="text" id="amount" name="amount" placeholder="0.00" readonly>
+        <div class="keypad-row">
+          <button type="button" class="key">1</button>
+          <button type="button" class="key">2</button>
+          <button type="button" class="key">3</button>
+        </div>
+        <div class="keypad-row">
+          <button type="button" class="key">4</button>
+          <button type="button" class="key">5</button>
+          <button type="button" class="key">6</button>
+        </div>
+        <div class="keypad-row">
+          <button type="button" class="key">7</button>
+          <button type="button" class="key">8</button>
+          <button type="button" class="key">9</button>
+        </div>
+        <div class="keypad-row">
+          <button type="button" class="key">.</button>
+          <button type="button" class="key">0</button>
+          <button type="button" class="key">C</button>
+        </div>
+      </div>
+      <div id="card-container"></div>
+      <button type="submit">Pay</button>
+      <input type="hidden" id="card-nonce" name="nonce">
+      <input type="hidden" id="email" name="email" value="customer@example.com">
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

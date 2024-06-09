@@ -1,0 +1,40 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  #keypad {
+    margin-bottom: 20px;
+  }
+  
+  .keypad-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+  }
+  
+  .key {
+    width: 60px;
+    height: 60px;
+    margin: 2px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #amount {
+    font-size: 24px;
+    width: 180px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+  
